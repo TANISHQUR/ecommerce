@@ -27,7 +27,6 @@ const App = () => {
   const showUserNavbar = path.startsWith("/user") || path.startsWith("/cart");
   const showLogout = path.startsWith("/admin");
 
-  // ✅ Show footer only on public and user routes
   const showFooter = path === "/" || path === "/login" || path.startsWith("/user") || path === "/cart";
 
   const handleLogout = () => {

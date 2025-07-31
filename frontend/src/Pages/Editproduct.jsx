@@ -15,7 +15,7 @@ const EditProduct = () => {
   const [image, setImage] = useState(null);
 
   useEffect(() => {
-    axios.get(`https://ecommerce-6-99vh.onrender.com/products/${productId}`)
+    axios.get(`https://ecommerce-backend-xdu8.onrender.com/products/${productId}`)
       .then((res) => {
         const { title, description, price, category } = res.data.product;
         setProduct({ title, description, price, category });

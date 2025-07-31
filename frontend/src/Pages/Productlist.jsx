@@ -8,7 +8,7 @@ const ProductList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('https://ecommerce-6-99vh.onrender.com/products')
+    axios.get('https://ecommerce-backend-xdu8.onrender.com/products')
       .then(res => {
         const data = res.data.products || res.data;
         setProducts(data);
