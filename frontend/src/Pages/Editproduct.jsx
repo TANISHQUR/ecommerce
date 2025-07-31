@@ -46,7 +46,7 @@ const EditProduct = () => {
     }
 
     try {
-      await axios.post(`https://ecommerce-6-99vh.onrender.com/products/update/${productId}`, formData, {
+      await axios.post(`https://ecommerce-backend-xdu8.onrender.com/products/update/${productId}`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       alert("Product updated successfully");
